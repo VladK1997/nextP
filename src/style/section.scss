@@ -1,0 +1,13 @@
+.section{
+  min-height: 100vh;
+  position: relative;
+  &__header{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &--dark{
+    background-color: #000;
+    color: #fff;
+  }
+}

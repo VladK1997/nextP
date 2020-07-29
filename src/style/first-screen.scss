@@ -1,0 +1,23 @@
+.first-screen{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(55.53% 33.64% at 50% 50%, rgba(255, 125, 150, 0.287806) 0%, rgba(245, 64, 137, 4e-05) 100%);
+  &__title{
+    position: relative;
+    font-size: 170px;
+    line-height: 1.057;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    transform-style: preserve-3d;
+  }
+  &__lettering{
+    position: absolute;
+    top: 17%;
+    left: 52%;
+    transform: translateX(-50%) translateZ(50px);
+  }
+}
