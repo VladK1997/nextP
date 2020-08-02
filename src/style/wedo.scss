@@ -1,0 +1,49 @@
+.wedo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 14.4%;
+  &__choose{
+    flex-grow: 1;
+  }
+  &__grid{
+    margin-top: 48px;
+    max-width: 536px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+    position: relative;
+    width: 32.27%;
+    padding-top: 32.27%;
+    border: none;
+    border-radius: 12px;
+    background-color: #260d26;
+    @extend %cursorPointer;
+    transition: 0.3s;
+    &:nth-of-type(n+4){
+      margin-top: 7px;
+    }
+    &:hover,&.active{
+      background-color: #dd051f;
+    }
+  }
+  &__item-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    &--hover{
+      opacity: 0;
+    }
+  }
+  &__item:hover &__item-img,&__item.active &__item-img{
+    opacity: 0;
+    &--hover{
+      opacity: 1;
+    }
+  }
+}

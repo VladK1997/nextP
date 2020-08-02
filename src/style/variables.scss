@@ -1,0 +1,10 @@
+$imgPath: 'img';
+%cursorPointer{
+  cursor: url('#{$imgPath}/pointer.png')8 8, pointer;
+}
+%cursorOpen{
+  cursor: url('#{$imgPath}/cursorOpen.png')50 50, pointer;
+}
+%cursorContact{
+  cursor: url('#{$imgPath}/cursorContact.png'), pointer;
+}

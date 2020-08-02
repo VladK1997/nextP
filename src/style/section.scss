@@ -1,13 +1,21 @@
 .section{
-  min-height: 100vh;
   position: relative;
+  min-height: 100vh;
   &__header{
     position: absolute;
-    top: 0;
+    top: 25px;
     left: 0;
+    z-index: 1;
+  }
+  &__title{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 40px;
   }
   &--dark{
     background-color: #000;
     color: #fff;
+  }
+  &--light{
+    background-color: #FFECEE;
   }
 }

@@ -8,10 +8,15 @@ body{
   font-size: 16px;
   font-family: 'Archivo',sans-serif;
   font-weight: 400;
+  cursor: url('#{$imgPath}/cursor.png') 8 8, auto;
+  color: #383030;
 }
 svg{
   width: 100%;
   height: 100%;
+}
+a{
+  @extend %cursorPointer;
 }
 .block{
   width: 100%;
@@ -45,8 +50,11 @@ svg{
   perspective: 1000px;
   &__figure{
     margin: 0;
-    width: 100%;
-    height: 100%;
     display: block;
   }
+}
+.sticky-el__end{
+  bottom: 0;
+  width: 100%;
+  height: 40px;
 }
