@@ -104,7 +104,7 @@
             <div class="clients__desc">
                 <h2 class="section__title">150+ <br>CLIENTS</h2>
                 <p>We work with some of the biggest gaming entertainers & world-renowned organisations.</p>
-                <a href="#">view all</a>
+                <a href="#" class="link">view all</a>
             </div>
             <div class="clients__grid">
                 <img src="dist/img/youtube2.png" class="clients__youtube">
@@ -214,35 +214,102 @@
     <div class="wedo">
         <div class="wedo__choose">
             <h2 class="section__title">We do</h2>
-            <div class="wedo__grid">
-                <button type="button" class="wedo__item active">
+            <div class="wedo__grid" id="wedoGrid">
+                <button type="button" class="wedo__item active" data-wedo="gear">
                     <img class="wedo__item-img" src="dist/img/gearDark.png" alt="">
                     <img class="wedo__item-img wedo__item-img--hover" src="dist/img/gear_red.png" alt="">
                 </button>
-                <button type="button" class="wedo__item">
+                <button type="button" class="wedo__item" data-wedo="star">
                     <img class="wedo__item-img" src="dist/img/starsSmall.png" alt="">
                     <img class="wedo__item-img wedo__item-img--hover" src="dist/img/star_red.png" alt="">
                 </button>
-                <button type="button" class="wedo__item">
+                <button type="button" class="wedo__item" data-wedo="graphik">
                     <img class="wedo__item-img" src="dist/img/graphik_small2.png" alt="">
                     <img class="wedo__item-img wedo__item-img--hover" src="dist/img/graphik_red.png" alt="">
                 </button>
-                <button type="button" class="wedo__item">
+                <button type="button" class="wedo__item" data-wedo="lupa">
                     <img class="wedo__item-img" src="dist/img/lupa_small.png" alt="">
                     <img class="wedo__item-img wedo__item-img--hover" src="dist/img/lupa_red.png" alt="">
                 </button>
-                <button type="button" class="wedo__item">
+                <button type="button" class="wedo__item" data-wedo="claquetal">
                     <img class="wedo__item-img" src="dist/img/hlopushka_small.png" alt="">
                     <img class="wedo__item-img wedo__item-img--hover" src="dist/img/hlopushka_red.png" alt="">
                 </button>
-                <button type="button" class="wedo__item">
+                <button type="button" class="wedo__item" data-wedo="Headphone">
                     <img class="wedo__item-img" src="dist/img/headphone_small.png" alt="">
                     <img class="wedo__item-img wedo__item-img--hover" src="dist/img/headphone_red.png" alt="">
                 </button>
             </div>
         </div>
-        <div class="wedo__preview">
-
+        <div class="wedo__wedo-preview wedo-preview" id="wedoPreview">
+            <canvas></canvas>
+            <div class="wedo-preview__item active" data-wedo="gear">
+                <div class="wedo-preview__img">
+                    <img src="dist/img/gearLarge.png">
+                </div>
+                <div class="wedo-preview__text">
+                    <h3>
+                        Channel Operation and Management
+                    </h3>
+                    <a href="#" class="link">learn more</a>
+                </div>
+            </div>
+            <div class="wedo-preview__item" data-wedo="star">
+                <div class="wedo-preview__img">
+                    <img src="dist/img/starLarge.png" >
+                </div>
+                <div class="wedo-preview__text">
+                    <h3>
+                        Creative Services for Infuencers
+                    </h3>
+                    <a href="#" class="link">learn more</a>
+                </div>
+            </div>
+            <div class="wedo-preview__item" data-wedo="graphik">
+                <div class="wedo-preview__img">
+                    <img src="dist/img/graphikLarge.png" >
+                </div>
+                <div class="wedo-preview__text">
+                    <h3>
+                        Graphic Design & Photography
+                    </h3>
+                    <a href="#" class="link">learn more</a>
+                </div>
+            </div>
+            <div class="wedo-preview__item" data-wedo="claquetal">
+                <div class="wedo-preview__img">
+                    <img src="dist/img/CLAQUETALarge.png">
+                </div>
+                <div class="wedo-preview__text">
+                    <h3>
+                        Lyric Videos & Animation
+                    </h3>
+                    <a href="#" class="link">learn more</a>
+                </div>
+            </div>
+            <div class="wedo-preview__item" data-wedo="lupa">
+                <div class="wedo-preview__img">
+                    <img src="dist/img/LupaLarge.png">
+                </div>
+                <div class="wedo-preview__text">
+                    <h3>
+                        Business Development
+                    </h3>
+                    <a href="#" class="link">learn more</a>
+                </div>
+            </div>
+            <div class="wedo-preview__item" data-wedo="Headphone">
+                <div class="wedo-preview__img">
+                    <img src="dist/img/HeadphoneLarge.png">
+                </div>
+                <div class="wedo-preview__text">
+                    <h3>
+                        Brand<br>
+                        Campaigns
+                    </h3>
+                    <a href="#" class="link">learn more</a>
+                </div>
+            </div>
         </div>
     </div>
     </div>
@@ -251,7 +318,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script src="dist/js/anime.js"></script>
-<script src="dist/index.js"></script>
+<script src="dist/index.js" defer></script>
 <script>
 
 </script>

@@ -1,0 +1,62 @@
+.wedo-preview{
+  position: relative;
+
+  &__item{
+    pointer-events: none;
+    display: none;
+    position: relative;
+    z-index: 1;
+    &:after {
+      width: 100%;
+      padding-top: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: radial-gradient(33.5% 27.76% at 50% 50%, rgba(255, 125, 150, 0.287806) 0%, rgba(245, 64, 137, 4e-05) 130%);
+      content:"";
+      z-index: -1;
+    }
+    &.active{
+      display: block;
+    }
+  }
+  &__img{
+    width: 63%;
+    padding-top: 63%;
+    position: relative;
+    margin: 0 auto;
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+    max-width: 360px;
+    h3{
+      font-size: 36px;
+      line-height: 1.27;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    a{
+      pointer-events: auto;
+    }
+  }
+}

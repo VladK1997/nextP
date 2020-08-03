@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 14.4%;
+  padding: 81px 0 42px;
   &__choose{
     flex-grow: 1;
   }
@@ -16,6 +16,10 @@
   }
   &__item{
     position: relative;
+    outline: none;
+    *{
+      pointer-events: none;
+    }
     width: 32.27%;
     padding-top: 32.27%;
     border: none;
@@ -26,7 +30,7 @@
     &:nth-of-type(n+4){
       margin-top: 7px;
     }
-    &:hover,&.active{
+    &:hover, &.active{
       background-color: #dd051f;
     }
   }
@@ -45,5 +49,10 @@
     &--hover{
       opacity: 1;
     }
+  }
+  &__wedo-preview{
+    width: 100%;
+    max-width: 635px;
+    padding-top: 10%;
   }
 }

@@ -17,6 +17,16 @@ svg{
 }
 a{
   @extend %cursorPointer;
+
+}
+.link{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 12px;
+  line-height: 2.16;
+  letter-spacing: 0.428571px;
+  text-transform: uppercase;
+  color: #D2132A;
+  text-decoration: none;
 }
 .block{
   width: 100%;
