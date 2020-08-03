@@ -1,6 +1,8 @@
 .section{
   position: relative;
   min-height: 100vh;
+  z-index: 0;
+  overflow-x: hidden;
   &__header{
     position: absolute;
     top: 25px;
@@ -10,6 +12,14 @@
   &__title{
     font-family: 'Archivo Black', sans-serif;
     font-size: 40px;
+    text-transform: uppercase;
+  }
+  &--wedo{
+    height: 1px;
+    min-height: 100vh;
+  }
+  &--wedo .container{
+      height: 100%;
   }
   &--dark{
     background-color: #000;
@@ -17,5 +27,12 @@
   }
   &--light{
     background-color: #FFECEE;
+  }
+}
+@media all and(max-width: 1100px){
+  .section{
+    &--wedo{
+      height: auto;
+    }
   }
 }

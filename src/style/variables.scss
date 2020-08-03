@@ -1,10 +1,14 @@
 $imgPath: 'img';
+$mainRed: #D2132A;
 %cursorPointer{
   cursor: url('#{$imgPath}/pointer.png')8 8, pointer;
 }
 %cursorOpen{
-  cursor: url('#{$imgPath}/cursorOpen.png')50 50, pointer;
+  cursor: url('#{$imgPath}/cursorOpen.png')50 50, pointer!important;
 }
 %cursorContact{
-  cursor: url('#{$imgPath}/cursorContact.png'), pointer;
+  cursor: url('#{$imgPath}/cursorContact.png')50 50, pointer;
+}
+@mixin cursorPointer{
+  cursor: url('#{$imgPath}/pointer.png')8 8, pointer;
 }

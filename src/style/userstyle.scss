@@ -14,9 +14,16 @@ body{
 svg{
   width: 100%;
   height: 100%;
+  fill: currentColor;
 }
 a{
   @extend %cursorPointer;
+}
+.d-none{
+  display: none;
+}
+.page{
+  //overflow-x: hidden;
 
 }
 .link{
@@ -25,31 +32,15 @@ a{
   line-height: 2.16;
   letter-spacing: 0.428571px;
   text-transform: uppercase;
-  color: #D2132A;
+  color: $mainRed;
   text-decoration: none;
 }
-.block{
+.block {
   width: 100%;
   height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  &:after{
-    content: '';
-    display: block;
-    background-color: dodgerblue;
-    width: 40px;
-    height: 30px;
-  }
-  &--1{
-    background-color: black;
-  }
-  &--2{
-    background-color: green;
-  }
-  &--3{
-    background-color: yellowgreen;
-  }
 }
 .logo{
   display: block;
@@ -67,4 +58,30 @@ a{
   bottom: 0;
   width: 100%;
   height: 40px;
+}
+.slider-btn{
+  display: block;
+  border: none;
+  background-color: transparent;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 13px;
+  text-transform: uppercase;
+  width:76px;
+  height: 76px;
+  border-radius: 50%;
+  transition: 0.3s;
+  outline: none;
+}
+.swiper-slide{
+  display: flex;
+}
+@media all and(min-width: 1100px){
+  .slider-btn{
+    @include cursorPointer;
+    &:hover{
+      background-color: $mainRed;
+      color: #fff;
+    }
+  }
 }

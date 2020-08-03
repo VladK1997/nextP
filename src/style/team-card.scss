@@ -1,0 +1,43 @@
+.team-card{
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  &:hover &__info{
+    opacity: 1;
+
+  }
+  img{
+    display: block;
+    max-width: 100%;
+  }
+  &__info{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #fff;
+    transition: 0.3s;
+    background-color: rgba($mainRed,0.8);
+    h4{
+      font-family: 'Archivo Black',sans-serif;
+      font-size: 12px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 0.428571px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 12px;
+      line-height: 13px;
+    }
+  }
+}

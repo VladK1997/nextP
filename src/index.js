@@ -367,3 +367,25 @@ function calcPositionByPercent(obj,canvas){
     };
     return obj.posPercent * (size[obj.axis] / 100);
 }
+(function(){
+    new Swiper('.ourTeam-slider', {
+        slidesPerView: 4,
+        initialSlide: 0,
+        spaceBetween: 17,
+        navigation: {
+            nextEl: '.ourTeam__slider-next',
+            prevEl: '.ourTeam__slider-prev'
+        },
+        breakpoints: {
+            1300: {
+                slidesPerView: 3
+            },
+            976: {
+                slidesPerView: 2
+            },
+            576: {
+                slidesPerView: 1
+            }
+        }
+    });
+})();

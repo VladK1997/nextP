@@ -20,6 +20,7 @@
     justify-content: space-around;
     &>img{
       position: absolute;
+      z-index: 1;
     }
   }
 
@@ -32,11 +33,17 @@
   }
   &__card{
     display: block;
+    border-radius: 10px;
+    overflow: hidden;
     &:nth-of-type(n+2){
       margin-top: 47px;
     }
     p{
       margin-top: 12px;
+    }
+    img{
+      display: block;
+      max-width: 100%;
     }
   }
   &__youtube{
@@ -53,5 +60,16 @@
     bottom: 40px;
     left: 0;
     transform: translateX(-65%);
+  }
+}
+@media all and(max-width: 1100px){
+  .clients{
+    flex-wrap: wrap;
+    justify-content: center;
+    &__desc{
+      margin-right: 0;
+      max-width: none;
+      text-align: center;
+    }
   }
 }

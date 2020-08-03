@@ -1,0 +1,32 @@
+.ourTeam{
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+  &__title{
+    text-align: center;
+  }
+  &__slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px 85px;
+  }
+  .ourTeam__slider-prev{
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  .ourTeam__slider-next{
+    flex-shrink: 0;
+    margin-left: 10px;
+  }
+}
+.ourTeam-slider{
+  max-width: 1100px;
+}
+@media all and(max-width: 976px) {
+  .ourTeam{
+    &__slider{
+      padding: 50px 0 85px;
+    }
+  }
+}
